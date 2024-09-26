@@ -1,2 +1,3 @@
-# beamable-sample-sandbox
-Public repository for sharing Beamable sample code for various purposes and in various states of completeness or usability.
+# Beamable Battle Pass Example
+
+The `battle-pass-example` repository contains a Unity project demonstrating a very simple battle pass implementation using Beamable services.

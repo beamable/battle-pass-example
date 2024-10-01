@@ -12,19 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f2267234264bc5b0c0111425b477c1, type: 3}
   m_Name: Season1Battlepass
   m_EditorClassIdentifier: 
-  _tags:
-  - base
+  _tags: []
   Name: 
-  Tiers:
-  - Level: 1
-    Rewards:
-    - RewardName: Coins
-      Quantity: 50
-    - RewardName: XP
-      Quantity: 100
-  - Level: 1
-    Rewards:
-    - RewardName: Coins
-      Quantity: 50
-    - RewardName: XP
-      Quantity: 100
+  Tiers: []

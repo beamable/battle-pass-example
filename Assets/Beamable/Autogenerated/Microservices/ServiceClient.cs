@@ -30,10 +30,27 @@ namespace Beamable.Server.Clients
                 return "Service";
             }
         }
+        
+        /// <summary>
+        /// Call the IsBattlepassValid method on the Service microservice
+        /// <see cref="Beamable.Microservices.Service.IsBattlepassValid"/>
+        /// </summary>
+        public Beamable.Common.Promise<bool> IsBattlepassValid(Beamable.Common.Content.ContentRef<Battlepass> battlepass)
+        {
+            object raw_battlepass = battlepass;
+            System.Collections.Generic.Dictionary<string, object> serializedFields = new System.Collections.Generic.Dictionary<string, object>();
+            serializedFields.Add("battlepass", raw_battlepass);
+            return this.Request<bool>("Service", "IsBattlepassValid", serializedFields);
+        }
     }
     
     internal sealed class MicroserviceParametersServiceClient
     {
+        
+        [System.SerializableAttribute()]
+        internal sealed class ParameterBeamable_Common_Content_ContentRef_Battlepass : MicroserviceClientDataWrapper<Beamable.Common.Content.ContentRef<Battlepass>>
+        {
+        }
     }
     
     [BeamContextSystemAttribute()]

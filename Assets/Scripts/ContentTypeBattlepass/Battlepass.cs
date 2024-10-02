@@ -1,13 +1,10 @@
 using System.Collections.Generic;
 using Beamable.Common.Content;
-using Beamable.Common.Inventory;
 
-namespace DefaultNamespace
-{
-    [ContentType("battlepass")]
+[ContentType("battlepass")]
     public class Battlepass : ContentObject
     {
         public string Name;
+        public string EndDate; 
         public List<Tier> Tiers;
     }
-}

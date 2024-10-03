@@ -1,0 +1,18 @@
+{
+    "name": "CustomContentObject",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8096aa2f7644d40f08b1fed854463288",
+        "GUID:ec8759ed81aca4752b7e9ded6e302fd7",
+        "GUID:ff53a48214edf435c89e955a020bb894"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

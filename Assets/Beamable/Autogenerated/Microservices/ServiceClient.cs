@@ -32,15 +32,15 @@ namespace Beamable.Server.Clients
         }
         
         /// <summary>
-        /// Call the CreateGroupWithSpaces method on the Service microservice
-        /// <see cref="Beamable.Microservices.Service.CreateGroupWithSpaces"/>
+        /// Call the IsBattlepassValid method on the Service microservice
+        /// <see cref="Beamable.Microservices.Service.IsBattlepassValid"/>
         /// </summary>
-        public Beamable.Common.Promise<string> CreateGroupWithSpaces(string groupName)
+        public Beamable.Common.Promise<bool> IsBattlepassValid(Beamable.Common.Content.ContentRef<Battlepass> battlepass)
         {
-            object raw_groupName = groupName;
+            object raw_battlepass = battlepass;
             System.Collections.Generic.Dictionary<string, object> serializedFields = new System.Collections.Generic.Dictionary<string, object>();
-            serializedFields.Add("groupName", raw_groupName);
-            return this.Request<string>("Service", "CreateGroupWithSpaces", serializedFields);
+            serializedFields.Add("battlepass", raw_battlepass);
+            return this.Request<bool>("Service", "IsBattlepassValid", serializedFields);
         }
     }
     
@@ -48,7 +48,7 @@ namespace Beamable.Server.Clients
     {
         
         [System.SerializableAttribute()]
-        internal sealed class ParameterSystem_String : MicroserviceClientDataWrapper<string>
+        internal sealed class ParameterBeamable_Common_Content_ContentRef_Battlepass : MicroserviceClientDataWrapper<Beamable.Common.Content.ContentRef<Battlepass>>
         {
         }
     }

@@ -1,0 +1,9 @@
+{
+  "solution": {
+    "path": "beamableServices.sln",
+    "projects": [
+      "..\\Library\\BeamableEditor\\GeneratedProjects\\Unity.Beamable.Customer.Common\\Unity.Beamable.Customer.Common.csproj",
+      "BattlePassService\\BattlePassService.csproj"
+    ]
+  }
+}

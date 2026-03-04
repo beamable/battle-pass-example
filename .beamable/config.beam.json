@@ -1,0 +1,25 @@
+{
+  "host": "https://api.beamable.com",
+  "cid": "1689160644344843",
+  "pid": "DE_64230218341665792",
+  "additionalProjectPaths": [],
+  "ignoredProjectPaths": [
+    "Packages/com.beamable",
+    "Packages/com.beamable.server",
+    "Library/PackageCache/com.beamable",
+    "Library/PackageCache/com.beamable.server"
+  ],
+  "linkedProjects": {
+    "unityProjectsPaths": [
+      {
+        "Path": "."
+      }
+    ],
+    "unrealProjectsPaths": []
+  },
+  "otelConfig": {
+    "BeamCliAllowTelemetry": false,
+    "BeamCliTelemetryLogLevel": "Trace",
+    "BeamCliTelemetryMaxSize": 0
+  }
+}
